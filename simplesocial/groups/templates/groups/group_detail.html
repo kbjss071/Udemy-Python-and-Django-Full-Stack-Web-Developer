@@ -23,10 +23,10 @@
 	<h2>No posts in this group yet!</h2>
 
 	{% else %}
-		<h1>There is {{group.posts.count}} post{{group.posts.count|pluralize}}.</h1>
-		<!-- {% for post in group.posts.all %}
+
+		{% for post in group.posts.all %}
 			{% include "posts/_post.html" %}
-		{% endfor %} -->
+		{% endfor %}
 
 	{% endif %}
 </div>
